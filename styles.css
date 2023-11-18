@@ -26,14 +26,18 @@
     flex-wrap: wrap;
     flex: 1;
 }
-.divider{
+.vertical-divider{
     position: relative;
-    
     z-index: 1;
     display: block;
     border: none;
+    border-left: 1px solid green; /* Adjust the color and thickness as needed */
+    height: 60px; /* Adjust the height as needed */
+    width: 1px;
+    transform: scaleY(0);
+    animation: divider_line 3s infinite cubic-bezier(.48, 0, .12, 1);
 }
-.d-flex{
+/* .d-flex{
     width: 1px;
     position: relative;
     height: 60px;
@@ -48,7 +52,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-}
+} */
 @keyframes divider_line {
     10% {
         transform: scaleY(0);
